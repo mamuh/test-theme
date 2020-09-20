@@ -1,6 +1,28 @@
-$background: #000;
+$theme-colors: (
+  "primary": blue,
+  "danger": green
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@import 'colours';
+@import 'header';
 
 body {
   background: $background;
   color: white;
+  box-sizing: border-box;
 }
+
+.banner {
+  width: 100%;
+  background: $light-grey;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: black;
+  }
+}
+
